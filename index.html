@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href ="zadanie14.html">zadanie14</a>
+    <a href = "zadanie15.html">zadanie15</a>
+    <link href="ankieta.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <style>
+        body {
+            background-color: #f7ebff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center; /* Центрируем по горизонтали */
+        }
+
+        #textContainer {
+            background-color: #d8b6ff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 18px 20px 20px 20px; /* Поднял на 2 см сверху */
+            text-align: center;
+            width: 20%;
+        }
+
+        #questions {
+            background-color: #d8b6ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 20%;
+            align-self: center;
+            margin-top: 20px;
+        }
+
+        .question {
+            display: flex;
+            flex-direction: column; /* Изменил на вертикальное расположение */
+            margin-bottom: 20px;
+            align-self: center;
+        }
+
+        .question label {
+            font-weight: bold;
+            margin-bottom: 5px; /* Добавил отступ снизу */
+        }
+
+        .question input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .question1 {
+            display: flex;
+            flex-direction: column; /* Изменил на вертикальное расположение */
+            margin-bottom: 20px;
+            align-self: center;
+        }
+
+        .question1 label {
+            font-weight: bold;
+            margin-bottom: 5px; /* Добавил отступ снизу */
+        }
+
+        .question1 input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        
+
+        #formContainer {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        #registrationForm {
+            width: 50%;
+        }
+
+        #courseImage {
+            width: 40%;
+        }
+
+        #buttons {
+            text-align: right;
+            margin: 20px;
+        }
+
+        #bottomContainer {
+            background-color: #d8b6ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="textContainer">
+        <p><h1>ANKIETA</h1></p>
+    </div>
+
+    <p><h4 style="margin-top: -10px;">Rejestracja na kurs angielskiego</p></h4>
+
+
+    <div id="questions">
+        <div class="question">
+            <label for="firstLastName">Imię i nazwisko:</label>
+            <input type="text" id="firstLastName" name="firstLastName">
+        </div>
+
+        <div class="question">
+            <label for="PhoneNumber">Numer telefonu:</label>
+            <input type="text" id="PhoneNumber" name="PhoneNumber">
+        </div>
+        <div class="question">
+            <label for="Adres">Adres E-mail:</label>
+            <input type="text" id="Adres" name="Adres">
+        </div>
+    </div>
+
+            <div class="question">
+                <label>1.Powiedz najpierw, jaki masz poziom angielskiego?</label>
+                <br>
+                <input type="radio" id="A1" name="poziom" value="A1">
+                <label for="A1">A1</label>
+
+                <input type="radio" id="A2-B1" name="poziom" value="A2-B1">
+                <label for="A2-B1">A2-B1</label>
+
+                <input type="radio" id="B2" name="poziom" value="B2">
+                <label for="B2">B2</label>
+
+                <input type="radio" id="C1-C2" name="poziom" value="C1-C2">
+                <label for="C1-C2">C1-C2</label>
+            </div>
+            <div class="question1">
+                <label>2.O ktorej godzinie jest dla ciebie wygodnie się uczyc?</label>
+                <br>
+                <input type="radio" id="10" name="poRGRTm" value="10">
+                <label for="A1">10:00-14:00</label>
+
+                <input type="radio" id="15" name="pкуаеп" value="15">
+                <label for="A2-B1">15:00-17:00</label>
+
+                <input type="radio" id="18" name="акуаку" value="18">
+                <label for="B2">18:00-20:00</label>
+             </div>
+            <div class="question">
+                <label for="opinion">3.Co sądzisz o naszym kursie? (Napisz swoją opinię)</label>
+                <textarea id="opinion" name="opinion" rows="4"></textarea>
+            </div>
+
+            <div id="socialIcons">
+                <a href="ссылка_на_ваш_instagram" target="_blank"><img src="мамама.png" alt="Instagram"></a>
+                <a href="ссылка_на_ваш_facebook" target="_blank"><img src="174848.png" alt="Facebook"></a>
+                <a href="#" onclick="history.back(); return false;"><img src="61449.png" alt="Wrócić"></a>
+            </div>
+            
+            
+            
+
+            <div id="buttons">
+                <input type="submit" value="Submit" class="submitButton">
+                <input type="reset" value="Reset" class="resetButton">
+            </div>
+            
+
+    <div id="bottomContainer">
+        <p></p>
+    </div>
+</body>
+</html>
+
+
